@@ -1,8 +1,8 @@
 # 云听HIFI 1.0.26
 
-[下载完整 AIDE 源码 ZIP](downloads/CloudTune-AIDE-Source-1.0.26-fx.zip)
+[下载完整 AIDE 源码 ZIP](https://github.com/fuhua301/CloudTune/releases/download/v1.0.26/CloudTune-AIDE-Source-1.0.26-fx.zip)
 
-[下载 1.0.26 APK 安装包](downloads/CloudTune-1.0.26.apk)
+[下载 1.0.26 APK 安装包](https://github.com/fuhua301/CloudTune/releases/download/v1.0.26/CloudTune-1.0.26.apk)
 
 个人酷狗云盘播放器，基于可播放的 1.0.12 稳定基线，增加内置音效。支持扫码登录、云盘分页、自动播放、歌词、后台播放、贴底控制区和桌面播放卡片。
 
