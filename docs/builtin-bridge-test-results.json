@@ -1,0 +1,166 @@
+{
+  "compiled_jni_bridge": "passed",
+  "checks": [
+    {
+      "rate": 44100,
+      "preset": 0,
+      "finite_output": true,
+      "bypass_exact": true,
+      "switch_and_short_block": true,
+      "bounds_rejected": true
+    },
+    {
+      "rate": 44100,
+      "preset": 1,
+      "finite_output": true,
+      "bypass_exact": true,
+      "switch_and_short_block": true,
+      "bounds_rejected": true
+    },
+    {
+      "rate": 44100,
+      "preset": 2,
+      "finite_output": true,
+      "bypass_exact": true,
+      "switch_and_short_block": true,
+      "bounds_rejected": true
+    },
+    {
+      "rate": 44100,
+      "preset": 3,
+      "finite_output": true,
+      "bypass_exact": true,
+      "switch_and_short_block": true,
+      "bounds_rejected": true
+    },
+    {
+      "rate": 44100,
+      "preset": 4,
+      "finite_output": true,
+      "bypass_exact": true,
+      "switch_and_short_block": true,
+      "bounds_rejected": true
+    },
+    {
+      "rate": 44100,
+      "preset": 5,
+      "finite_output": true,
+      "bypass_exact": true,
+      "switch_and_short_block": true,
+      "bounds_rejected": true
+    },
+    {
+      "rate": 44100,
+      "preset": 6,
+      "finite_output": true,
+      "bypass_exact": true,
+      "switch_and_short_block": true,
+      "bounds_rejected": true
+    },
+    {
+      "rate": 44100,
+      "preset": 7,
+      "finite_output": true,
+      "bypass_exact": true,
+      "switch_and_short_block": true,
+      "bounds_rejected": true
+    },
+    {
+      "rate": 44100,
+      "preset": 9,
+      "finite_output": true,
+      "bypass_exact": true,
+      "switch_and_short_block": true,
+      "bounds_rejected": true
+    },
+    {
+      "rate": 44100,
+      "preset": 10,
+      "finite_output": true,
+      "bypass_exact": true,
+      "switch_and_short_block": true,
+      "bounds_rejected": true
+    },
+    {
+      "rate": 48000,
+      "preset": 0,
+      "finite_output": true,
+      "bypass_exact": true,
+      "switch_and_short_block": true,
+      "bounds_rejected": true
+    },
+    {
+      "rate": 48000,
+      "preset": 1,
+      "finite_output": true,
+      "bypass_exact": true,
+      "switch_and_short_block": true,
+      "bounds_rejected": true
+    },
+    {
+      "rate": 48000,
+      "preset": 2,
+      "finite_output": true,
+      "bypass_exact": true,
+      "switch_and_short_block": true,
+      "bounds_rejected": true
+    },
+    {
+      "rate": 48000,
+      "preset": 3,
+      "finite_output": true,
+      "bypass_exact": true,
+      "switch_and_short_block": true,
+      "bounds_rejected": true
+    },
+    {
+      "rate": 48000,
+      "preset": 4,
+      "finite_output": true,
+      "bypass_exact": true,
+      "switch_and_short_block": true,
+      "bounds_rejected": true
+    },
+    {
+      "rate": 48000,
+      "preset": 5,
+      "finite_output": true,
+      "bypass_exact": true,
+      "switch_and_short_block": true,
+      "bounds_rejected": true
+    },
+    {
+      "rate": 48000,
+      "preset": 6,
+      "finite_output": true,
+      "bypass_exact": true,
+      "switch_and_short_block": true,
+      "bounds_rejected": true
+    },
+    {
+      "rate": 48000,
+      "preset": 7,
+      "finite_output": true,
+      "bypass_exact": true,
+      "switch_and_short_block": true,
+      "bounds_rejected": true
+    },
+    {
+      "rate": 48000,
+      "preset": 9,
+      "finite_output": true,
+      "bypass_exact": true,
+      "switch_and_short_block": true,
+      "bounds_rejected": true
+    },
+    {
+      "rate": 48000,
+      "preset": 10,
+      "finite_output": true,
+      "bypass_exact": true,
+      "switch_and_short_block": true,
+      "bounds_rejected": true
+    }
+  ],
+  "scope": "ARM64 CPU emulation with libc/JNI/loader mocks; not Android linking, decoding or listening. FIR mode 1 independently validated in ConvolverTests. HIFI uses original Virtualizer/HRTF; rotation uses original ViPER3DRender at 44100 Hz with a local streaming rate adapter."
+}

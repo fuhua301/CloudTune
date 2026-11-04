@@ -1,0 +1,74 @@
+{
+  "result": "passed",
+  "checks": [
+    {
+      "preset": "3D旋转",
+      "rate": 44100,
+      "chunk_invariance_error": 0.0,
+      "energy": 125.73951089191752,
+      "stereo_difference": 0.12636280804872513
+    },
+    {
+      "preset": "HIFI现场",
+      "rate": 44100,
+      "chunk_pattern": [
+        2048
+      ],
+      "finite_output": true,
+      "energy": 463.42986024599537
+    },
+    {
+      "preset": "HIFI现场",
+      "rate": 44100,
+      "chunk_pattern": [
+        17,
+        257,
+        511,
+        129
+      ],
+      "finite_output": true,
+      "energy": 353.80591656278426
+    },
+    {
+      "preset": "3D旋转",
+      "rate": 48000,
+      "chunk_invariance_error": 0.0,
+      "energy": 147.40186984602082,
+      "stereo_difference": 0.14108476042747498
+    },
+    {
+      "preset": "HIFI现场",
+      "rate": 48000,
+      "chunk_pattern": [
+        2048
+      ],
+      "finite_output": true,
+      "energy": 379.7849018274642
+    },
+    {
+      "preset": "HIFI现场",
+      "rate": 48000,
+      "chunk_pattern": [
+        17,
+        257,
+        511,
+        129
+      ],
+      "finite_output": true,
+      "energy": 287.59553874555314
+    },
+    {
+      "original_renderer_angle": 90,
+      "difference_from_front": 0.2442585937678814
+    },
+    {
+      "original_renderer_angle": 180,
+      "difference_from_front": 0.018521524965763092
+    },
+    {
+      "original_renderer_angle": 270,
+      "difference_from_front": 0.2442585937678814
+    }
+  ],
+  "scope": "Original ARM64 DSP and compiled JNI under CPU emulation with loader/libc/JNI mocks; no phone playback test"
+}

@@ -1,0 +1,374 @@
+----------
+1. WARNING in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/src/main/java/com/cloudtune/player/KugouApi.java (at line 91)
+	static class ApiException extends IOException {
+	             ^^^^^^^^^^^^
+The serializable class ApiException does not declare a static final serialVersionUID field of type long
+----------
+2. WARNING in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/src/main/java/com/cloudtune/player/KugouApi.java (at line 222)
+	static class EndOfList extends IOException{EndOfList(){super("云盘列表已到末尾");}}
+	             ^^^^^^^^^
+The serializable class EndOfList does not declare a static final serialVersionUID field of type long
+----------
+----------
+3. WARNING in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/src/main/java/com/cloudtune/player/PlaybackService.java (at line 37)
+	session=new MediaSession(this,"云听");session.setFlags(MediaSession.FLAG_HANDLES_MEDIA_BUTTONS|MediaSession.FLAG_HANDLES_TRANSPORT_CONTROLS);
+	                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+The field MediaSession.FLAG_HANDLES_MEDIA_BUTTONS is deprecated
+----------
+4. WARNING in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/src/main/java/com/cloudtune/player/PlaybackService.java (at line 37)
+	session=new MediaSession(this,"云听");session.setFlags(MediaSession.FLAG_HANDLES_MEDIA_BUTTONS|MediaSession.FLAG_HANDLES_TRANSPORT_CONTROLS);
+	                                                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The field MediaSession.FLAG_HANDLES_TRANSPORT_CONTROLS is deprecated
+----------
+5. WARNING in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/src/main/java/com/cloudtune/player/PlaybackService.java (at line 146)
+	Notification.Builder b=Build.VERSION.SDK_INT>=26?new Notification.Builder(this,"music"):new Notification.Builder(this);
+	                                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+The constructor Notification.Builder(Context) is deprecated
+----------
+6. WARNING in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/src/main/java/com/cloudtune/player/PlaybackService.java (at line 148)
+	.addAction(new Notification.Action.Builder(drawable("ic_prev"),"上一首",action("PREV",1)).build())
+	               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The constructor Notification.Action.Builder(int, CharSequence, PendingIntent) is deprecated
+----------
+7. WARNING in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/src/main/java/com/cloudtune/player/PlaybackService.java (at line 149)
+	.addAction(new Notification.Action.Builder(drawable(playing||preparing?"ic_pause":"ic_play"),playing||preparing?"暂停":"播放",action("TOGGLE",2)).build())
+	               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The constructor Notification.Action.Builder(int, CharSequence, PendingIntent) is deprecated
+----------
+8. WARNING in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/src/main/java/com/cloudtune/player/PlaybackService.java (at line 150)
+	.addAction(new Notification.Action.Builder(drawable("ic_next"),"下一首",action("NEXT",3)).build())
+	               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The constructor Notification.Action.Builder(int, CharSequence, PendingIntent) is deprecated
+----------
+9. WARNING in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/src/main/java/com/cloudtune/player/PlaybackService.java (at line 151)
+	.addAction(new Notification.Action.Builder(drawable("ic_close"),"关闭",action("STOP",4)).build())
+	               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The constructor Notification.Action.Builder(int, CharSequence, PendingIntent) is deprecated
+----------
+9 problems (9 warnings)
+Info: Stripped invalid locals information from 82 methods.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/aztec/AztecReader.class:
+Methods with invalid locals information:
+  com.google.zxing.Result com.google.zxing.aztec.AztecReader.decode(com.google.zxing.BinaryBitmap, java.util.Map)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 8 with constraint OBJECT.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/aztec/decoder/Decoder.class:
+Methods with invalid locals information:
+  java.lang.String com.google.zxing.aztec.decoder.Decoder.getEncodedData(boolean[])
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 8 with constraint OBJECT.
+  boolean[] com.google.zxing.aztec.decoder.Decoder.correctBits(boolean[])
+  Type information in locals-table is inconsistent. Cannot constrain type: @Nullable com.google.zxing.common.reedsolomon.ReedSolomonException {} for value: v69(ex) by constraint INT.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/aztec/detector/Detector.class:
+Methods with invalid locals information:
+  int com.google.zxing.aztec.detector.Detector.getCorrectedParameterData(long, boolean)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 7 with constraint OBJECT.
+  com.google.zxing.aztec.detector.Detector$Point com.google.zxing.aztec.detector.Detector.getMatrixCenter()
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 5 with constraint OBJECT.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/aztec/encoder/Encoder.class:
+Methods with invalid locals information:
+  com.google.zxing.aztec.encoder.AztecCode com.google.zxing.aztec.encoder.Encoder.encode(byte[], int, int)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 7 with constraint INT.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/client/result/EmailAddressResultParser.class:
+Methods with invalid locals information:
+  com.google.zxing.client.result.EmailAddressParsedResult com.google.zxing.client.result.EmailAddressResultParser.parse(com.google.zxing.Result)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 5 with constraint OBJECT.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/client/result/VCardResultParser.class:
+Methods with invalid locals information:
+  java.util.List com.google.zxing.client.result.VCardResultParser.matchVCardPrefixedField(java.lang.CharSequence, java.lang.String, boolean, boolean)
+  Type information in locals-table is inconsistent. Cannot constrain type: @Nullable java.util.List {} for value: v492 by constraint INT.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/client/result/VEventResultParser.class:
+Methods with invalid locals information:
+  com.google.zxing.client.result.CalendarParsedResult com.google.zxing.client.result.VEventResultParser.parse(com.google.zxing.Result)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 16 with constraint INT.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/client/result/VINResultParser.class:
+Methods with invalid locals information:
+  com.google.zxing.client.result.VINParsedResult com.google.zxing.client.result.VINResultParser.parse(com.google.zxing.Result)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 3 with constraint OBJECT.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/common/BitArray.class:
+Methods with invalid locals information:
+  void com.google.zxing.common.BitArray.reverse()
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 5 with constraint LONG.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/common/DefaultGridSampler.class:
+Methods with invalid locals information:
+  com.google.zxing.common.BitMatrix com.google.zxing.common.DefaultGridSampler.sampleGrid(com.google.zxing.common.BitMatrix, int, int, com.google.zxing.common.PerspectiveTransform)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 10 with constraint OBJECT.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/common/GlobalHistogramBinarizer.class:
+Methods with invalid locals information:
+  int com.google.zxing.common.GlobalHistogramBinarizer.estimateBlackPoint(int[])
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 9 with constraint INT.
+  com.google.zxing.common.BitMatrix com.google.zxing.common.GlobalHistogramBinarizer.getBlackMatrix()
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 11 with constraint INT.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/common/reedsolomon/ReedSolomonDecoder.class:
+Methods with invalid locals information:
+  com.google.zxing.common.reedsolomon.GenericGFPoly[] com.google.zxing.common.reedsolomon.ReedSolomonDecoder.runEuclideanAlgorithm(com.google.zxing.common.reedsolomon.GenericGFPoly, com.google.zxing.common.reedsolomon.GenericGFPoly, int)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 8 with constraint INT.
+  void com.google.zxing.common.reedsolomon.ReedSolomonDecoder.decode(int[], int)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 7 with constraint OBJECT.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/datamatrix/DataMatrixWriter.class:
+Methods with invalid locals information:
+  com.google.zxing.common.BitMatrix com.google.zxing.datamatrix.DataMatrixWriter.encode(java.lang.String, com.google.zxing.BarcodeFormat, int, int, java.util.Map)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 9 with constraint OBJECT.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/datamatrix/decoder/DataBlock.class:
+Methods with invalid locals information:
+  com.google.zxing.datamatrix.decoder.DataBlock[] com.google.zxing.datamatrix.decoder.DataBlock.getDataBlocks(byte[], com.google.zxing.datamatrix.decoder.Version)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 11 with constraint INT.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/datamatrix/decoder/Decoder.class:
+Methods with invalid locals information:
+  void com.google.zxing.datamatrix.decoder.Decoder.correctErrors(byte[], int)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 5 with constraint OBJECT.
+  com.google.zxing.common.DecoderResult com.google.zxing.datamatrix.decoder.Decoder.decode(com.google.zxing.common.BitMatrix)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 9 with constraint OBJECT.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/datamatrix/detector/Detector.class:
+Methods with invalid locals information:
+  com.google.zxing.common.DetectorResult com.google.zxing.datamatrix.detector.Detector.detect()
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 14 with constraint OBJECT.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/datamatrix/encoder/C40Encoder.class:
+Methods with invalid locals information:
+  void com.google.zxing.datamatrix.encoder.C40Encoder.encode(com.google.zxing.datamatrix.encoder.EncoderContext)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 8 with constraint INT.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/datamatrix/encoder/HighLevelEncoder.class:
+Methods with invalid locals information:
+  int com.google.zxing.datamatrix.encoder.HighLevelEncoder.lookAheadTest(java.lang.CharSequence, int, int)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 5 with constraint INT.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/maxicode/decoder/DecodedBitStreamParser.class:
+Methods with invalid locals information:
+  com.google.zxing.common.DecoderResult com.google.zxing.maxicode.decoder.DecodedBitStreamParser.decode(byte[], int)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 4 with constraint OBJECT.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/maxicode/decoder/Decoder.class:
+Methods with invalid locals information:
+  void com.google.zxing.maxicode.decoder.Decoder.correctErrors(byte[], int, int, int, int)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 9 with constraint OBJECT.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/multi/ByQuadrantReader.class:
+Methods with invalid locals information:
+  com.google.zxing.Result com.google.zxing.multi.ByQuadrantReader.decode(com.google.zxing.BinaryBitmap, java.util.Map)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 7 with constraint OBJECT.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/multi/GenericMultipleBarcodeReader.class:
+Methods with invalid locals information:
+  void com.google.zxing.multi.GenericMultipleBarcodeReader.doDecodeMultiple(com.google.zxing.BinaryBitmap, java.util.Map, java.util.List, int, int, int)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 8 with constraint OBJECT.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/multi/qrcode/QRCodeMultiReader.class:
+Methods with invalid locals information:
+  java.util.List com.google.zxing.multi.qrcode.QRCodeMultiReader.processStructuredAppend(java.util.List)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 3 with constraint OBJECT.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/oned/CodaBarReader.class:
+Methods with invalid locals information:
+  int com.google.zxing.oned.CodaBarReader.toNarrowWidePattern(int)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 7 with constraint INT.
+  com.google.zxing.Result com.google.zxing.oned.CodaBarReader.decodeRow(int, com.google.zxing.common.BitArray, java.util.Map)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 6 with constraint INT.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/oned/Code128Reader.class:
+Methods with invalid locals information:
+  com.google.zxing.Result com.google.zxing.oned.Code128Reader.decodeRow(int, com.google.zxing.common.BitArray, java.util.Map)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 26 with constraint INT.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/oned/Code128Writer.class:
+Methods with invalid locals information:
+  boolean[] com.google.zxing.oned.Code128Writer.encode(java.lang.String)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 4 with constraint INT.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/oned/Code39Reader.class:
+Methods with invalid locals information:
+  int com.google.zxing.oned.Code39Reader.toNarrowWidePattern(int[])
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 8 with constraint INT.
+  com.google.zxing.Result com.google.zxing.oned.Code39Reader.decodeRow(int, com.google.zxing.common.BitArray, java.util.Map)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 11 with constraint INT.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/oned/Code39Writer.class:
+Methods with invalid locals information:
+  boolean[] com.google.zxing.oned.Code39Writer.encode(java.lang.String)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 4 with constraint INT.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/oned/Code93Reader.class:
+Methods with invalid locals information:
+  int com.google.zxing.oned.Code93Reader.toPattern(int[])
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 5 with constraint INT.
+  com.google.zxing.Result com.google.zxing.oned.Code93Reader.decodeRow(int, com.google.zxing.common.BitArray, java.util.Map)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 11 with constraint INT.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/oned/EAN13Reader.class:
+Methods with invalid locals information:
+  int com.google.zxing.oned.EAN13Reader.decodeMiddle(com.google.zxing.common.BitArray, int[], java.lang.StringBuilder)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 8 with constraint OBJECT.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/oned/EAN13Writer.class:
+Methods with invalid locals information:
+  boolean[] com.google.zxing.oned.EAN13Writer.encode(java.lang.String)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 4 with constraint OBJECT.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/oned/EAN8Reader.class:
+Methods with invalid locals information:
+  int com.google.zxing.oned.EAN8Reader.decodeMiddle(com.google.zxing.common.BitArray, int[], java.lang.StringBuilder)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 7 with constraint OBJECT.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/oned/EAN8Writer.class:
+Methods with invalid locals information:
+  boolean[] com.google.zxing.oned.EAN8Writer.encode(java.lang.String)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 4 with constraint OBJECT.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/oned/ITFReader.class:
+Methods with invalid locals information:
+  int[] com.google.zxing.oned.ITFReader.decodeEnd(com.google.zxing.common.BitArray)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 4 with constraint OBJECT.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/oned/OneDReader.class:
+Methods with invalid locals information:
+  com.google.zxing.Result com.google.zxing.oned.OneDReader.doDecode(com.google.zxing.BinaryBitmap, java.util.Map)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 14 with constraint OBJECT.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/oned/UPCEANExtension5Support.class:
+Methods with invalid locals information:
+  java.lang.String com.google.zxing.oned.UPCEANExtension5Support.parseExtension5String(java.lang.String)
+  Type information in locals-table is inconsistent. Cannot constrain type: INT for value: v46 by constraint OBJECT.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/oned/UPCEANReader.class:
+Methods with invalid locals information:
+  int com.google.zxing.oned.UPCEANReader.getStandardUPCEANChecksum(java.lang.CharSequence)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 4 with constraint INT.
+  com.google.zxing.Result com.google.zxing.oned.UPCEANReader.decodeRow(int, com.google.zxing.common.BitArray, int[], java.util.Map)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 17 with constraint OBJECT.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/oned/UPCEWriter.class:
+Methods with invalid locals information:
+  boolean[] com.google.zxing.oned.UPCEWriter.encode(java.lang.String)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 4 with constraint OBJECT.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/oned/rss/RSS14Reader.class:
+Methods with invalid locals information:
+  com.google.zxing.oned.rss.Pair com.google.zxing.oned.rss.RSS14Reader.decodePair(com.google.zxing.common.BitArray, boolean, int, java.util.Map)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 5 with constraint OBJECT.
+  com.google.zxing.oned.rss.DataCharacter com.google.zxing.oned.rss.RSS14Reader.decodeDataCharacter(com.google.zxing.common.BitArray, com.google.zxing.oned.rss.FinderPattern, boolean)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 12 with constraint FLOAT.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/oned/rss/expanded/RSSExpandedReader.class:
+Methods with invalid locals information:
+  com.google.zxing.oned.rss.FinderPattern com.google.zxing.oned.rss.expanded.RSSExpandedReader.parseFoundFinderPattern(com.google.zxing.common.BitArray, int, boolean)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 7 with constraint OBJECT.
+  com.google.zxing.oned.rss.DataCharacter com.google.zxing.oned.rss.expanded.RSSExpandedReader.decodeDataCharacter(com.google.zxing.common.BitArray, com.google.zxing.oned.rss.FinderPattern, boolean, boolean)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 14 with constraint FLOAT.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/oned/rss/expanded/decoders/FieldParser.class:
+Methods with invalid locals information:
+  java.lang.String com.google.zxing.oned.rss.expanded.decoders.FieldParser.parseFieldsInGeneralPurpose(java.lang.String)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 6 with constraint OBJECT.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/oned/rss/expanded/decoders/GeneralAppIdDecoder.class:
+Methods with invalid locals information:
+  com.google.zxing.oned.rss.expanded.decoders.DecodedInformation com.google.zxing.oned.rss.expanded.decoders.GeneralAppIdDecoder.parseBlocks()
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 2 with constraint OBJECT.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/pdf417/decoder/BoundingBox.class:
+Methods with invalid locals information:
+  com.google.zxing.pdf417.decoder.BoundingBox com.google.zxing.pdf417.decoder.BoundingBox.addMissingRows(int, int, boolean)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 8 with constraint OBJECT.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/pdf417/decoder/DecodedBitStreamParser.class:
+Methods with invalid locals information:
+  com.google.zxing.common.DecoderResult com.google.zxing.pdf417.decoder.DecodedBitStreamParser.decode(int[], java.lang.String)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 7 with constraint OBJECT.
+  int com.google.zxing.pdf417.decoder.DecodedBitStreamParser.byteCompaction(int, int[], java.nio.charset.Charset, int, java.lang.StringBuilder)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 12 with constraint INT.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/pdf417/decoder/PDF417ScanningDecoder.class:
+Methods with invalid locals information:
+  com.google.zxing.pdf417.decoder.Codeword com.google.zxing.pdf417.decoder.PDF417ScanningDecoder.detectCodeword(com.google.zxing.common.BitMatrix, int, int, boolean, int, int, int, int)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 11 with constraint INT.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/pdf417/decoder/ec/ErrorCorrection.class:
+Methods with invalid locals information:
+  com.google.zxing.pdf417.decoder.ec.ModulusPoly[] com.google.zxing.pdf417.decoder.ec.ErrorCorrection.runEuclideanAlgorithm(com.google.zxing.pdf417.decoder.ec.ModulusPoly, com.google.zxing.pdf417.decoder.ec.ModulusPoly, int)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 8 with constraint INT.
+  int com.google.zxing.pdf417.decoder.ec.ErrorCorrection.decode(int[], int, int[])
+  Type information in locals-table is inconsistent. Cannot constrain type: @Nullable (@Nullable com.google.zxing.pdf417.decoder.ec.ModulusPoly {}[]) for value: v51 by constraint INT.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/pdf417/detector/Detector.class:
+Methods with invalid locals information:
+  com.google.zxing.ResultPoint[] com.google.zxing.pdf417.detector.Detector.findRowsWithPattern(com.google.zxing.common.BitMatrix, int, int, int, int, int[])
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 9 with constraint OBJECT.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/pdf417/encoder/PDF417.class:
+Methods with invalid locals information:
+  int[] com.google.zxing.pdf417.encoder.PDF417.determineDimensions(int, int)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 5 with constraint INT.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/pdf417/encoder/PDF417HighLevelEncoder.class:
+Methods with invalid locals information:
+  void com.google.zxing.pdf417.encoder.PDF417HighLevelEncoder.<clinit>()
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 1 with constraint INT.
+  int com.google.zxing.pdf417.encoder.PDF417HighLevelEncoder.encodeText(java.lang.CharSequence, int, int, java.lang.StringBuilder, int)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 9 with constraint INT.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/qrcode/decoder/DataBlock.class:
+Methods with invalid locals information:
+  com.google.zxing.qrcode.decoder.DataBlock[] com.google.zxing.qrcode.decoder.DataBlock.getDataBlocks(byte[], com.google.zxing.qrcode.decoder.Version, com.google.zxing.qrcode.decoder.ErrorCorrectionLevel)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 10 with constraint INT.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/qrcode/decoder/DecodedBitStreamParser.class:
+Methods with invalid locals information:
+  com.google.zxing.common.DecoderResult com.google.zxing.qrcode.decoder.DecodedBitStreamParser.decode(byte[], com.google.zxing.qrcode.decoder.Version, com.google.zxing.qrcode.decoder.ErrorCorrectionLevel, java.util.Map)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 9 with constraint OBJECT.
+  void com.google.zxing.qrcode.decoder.DecodedBitStreamParser.decodeHanziSegment(com.google.zxing.common.BitSource, java.lang.StringBuilder, int)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 5 with constraint INT.
+  void com.google.zxing.qrcode.decoder.DecodedBitStreamParser.decodeKanjiSegment(com.google.zxing.common.BitSource, java.lang.StringBuilder, int)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 5 with constraint INT.
+  void com.google.zxing.qrcode.decoder.DecodedBitStreamParser.decodeNumericSegment(com.google.zxing.common.BitSource, java.lang.StringBuilder, int)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 3 with constraint INT.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/qrcode/decoder/Decoder.class:
+Methods with invalid locals information:
+  void com.google.zxing.qrcode.decoder.Decoder.correctErrors(byte[], int)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 5 with constraint OBJECT.
+  com.google.zxing.common.DecoderResult com.google.zxing.qrcode.decoder.Decoder.decode(com.google.zxing.common.BitMatrix, java.util.Map)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 6 with constraint OBJECT.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/qrcode/detector/AlignmentPatternFinder.class:
+Methods with invalid locals information:
+  com.google.zxing.qrcode.detector.AlignmentPattern com.google.zxing.qrcode.detector.AlignmentPatternFinder.find()
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 10 with constraint OBJECT.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/qrcode/detector/FinderPatternFinder.class:
+Methods with invalid locals information:
+  boolean com.google.zxing.qrcode.detector.FinderPatternFinder.foundPatternCross(int[])
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 3 with constraint INT.
+  boolean com.google.zxing.qrcode.detector.FinderPatternFinder.foundPatternDiagonal(int[])
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 3 with constraint INT.
+  boolean com.google.zxing.qrcode.detector.FinderPatternFinder.haveMultiplyConfirmedCenters()
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 5 with constraint OBJECT.
+  com.google.zxing.qrcode.detector.FinderPattern[] com.google.zxing.qrcode.detector.FinderPatternFinder.selectBestPatterns()
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 5 with constraint OBJECT.
+  com.google.zxing.qrcode.detector.FinderPatternInfo com.google.zxing.qrcode.detector.FinderPatternFinder.find(java.util.Map)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 8 with constraint OBJECT.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/qrcode/encoder/Encoder.class:
+Methods with invalid locals information:
+  com.google.zxing.qrcode.encoder.QRCode com.google.zxing.qrcode.encoder.Encoder.encode(java.lang.String, com.google.zxing.qrcode.decoder.ErrorCorrectionLevel, java.util.Map)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 7 with constraint INT.
+  boolean com.google.zxing.qrcode.encoder.Encoder.isOnlyDoubleByteKanji(java.lang.String)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 2 with constraint OBJECT.
+  void com.google.zxing.qrcode.encoder.Encoder.terminateBits(int, com.google.zxing.common.BitArray)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 3 with constraint INT.
+  com.google.zxing.common.BitArray com.google.zxing.qrcode.encoder.Encoder.interleaveWithECBytes(com.google.zxing.common.BitArray, int, int, int)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 11 with constraint INT.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/qrcode/encoder/MaskUtil.class:
+Methods with invalid locals information:
+  int com.google.zxing.qrcode.encoder.MaskUtil.applyMaskPenaltyRule4(com.google.zxing.qrcode.encoder.ByteMatrix)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 6 with constraint INT.
+Info in /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/app/libs/zxing-core.jar:com/google/zxing/qrcode/encoder/MatrixUtil.class:
+Methods with invalid locals information:
+  void com.google.zxing.qrcode.encoder.MatrixUtil.embedTypeInfo(com.google.zxing.qrcode.decoder.ErrorCorrectionLevel, int, com.google.zxing.qrcode.encoder.ByteMatrix)
+  Information in locals-table is invalid with respect to the stack map table. Local refers to non-present stack map type for register: 9 with constraint INT.
+Info: Some warnings are typically a sign of using an outdated Java toolchain. To fix, recompile the source with an updated toolchain.
+I: Using Apktool 3.0.3 on CloudTune.apk with 8 threads
+I: Copying raw classes.dex...
+I: Building resources with aapt2...
+I: Building apk file...
+I: Importing assets...
+I: Importing lib...
+I: Built apk into: /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/build/CloudTune-unsigned.apk
+source:
+	/workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/build
+zipalign location: BUILT_IN 
+	/tmp/uapksigner-4633870663182599295/linux-zipalign-33_0_215111022828709851806.tmp
+keystore:
+	[0] 161a0018 /tmp/temp_7009087772510353819_debug.keystore (DEBUG_EMBEDDED)
+
+01. CloudTune-unsigned.apk
+
+	SIGN
+	file: /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/build/CloudTune-unsigned.apk (2.08 MiB)
+	checksum: b31f80c10a9c79eb50a1c949c4c0d6bdac8f915e79895911c44f952fed3f3219 (sha256)
+	- zipalign success
+	- sign success
+
+	VERIFY
+	file: /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/build/signed/CloudTune-aligned-debugSigned.apk (2.09 MiB)
+	checksum: 38383addf3ec54ecc8f6d31165786078d6ecb21d87c10d4b67b87db22882c552 (sha256)
+	- zipalign verified
+	- signature verified [v1, v2, v3]
+		Subject: CN=Android Debug, OU=Android, O=US, L=US, ST=US, C=US
+		SHA256: 1e08a903aef9c3a721510b64ec764d01d3d094eb954161b62544ea8f187b5953 / SHA256withRSA
+		Expires: Fri Mar 11 04:10:05 CST 2044
+
+[Tue Nov 03 23:57:01 CST 2026][v1.3.0]
+Successfully processed 1 APKs and 0 errors in 0.39 seconds.
+PASS: 82 protocol and track checks
+identity and latency rate=44100 taps=1 max_error=2.9802322387695312E-8
+independent stereo rate=48000 taps=3 max_error=1.7666025087237358E-8
+viper_blackdiamond_headset.irs rate=44100 taps=1995 max_error=7.061702511634849E-8
+viper_blackdiamond_headset.irs rate=48000 taps=2172 max_error=6.498301940993656E-8
+PASS: 20664 convolution assertions; includes tail, latency, chunk boundaries, stereo and resampling
+android28.jar 7eba0f3c6815e83f6d364431a0c868584632e8cab8386a0b7287a08da0bdf383
+ecj.jar f7686c4960cf70c2ebc5c500a73a8cfc04541b730c18f1c5c21329889b137f45
+r8.jar 900dfbc649519969fc5a4c7520d6b7355338e565fa1249874e0190b8d61b1199
+apktool.jar dbf930b076c6b9be08d57c449cacefc3bdd6b71ebd59b3066fc0e1f5b14f9423
+signer.jar e1299fd6fcf4da527dd53735b56127e8ea922a321128123b9c32d619bba1d835
+json.jar 3cf6cd6892e32e2b4c1c39e0f52f5248a2f5b37646fdfbb79a66b46b618414ed
+Built: /workspace/scratch/ee670b101bae/cloudtune-1016/CloudTune/dist/CloudTune-1.0.16-fx-test.apk

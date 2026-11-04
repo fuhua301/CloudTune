@@ -1,0 +1,5 @@
+PASS: 82 protocol and track checks
+PASS: 20664 convolution assertions; includes tail, latency, chunk boundaries, stereo and resampling
+PASS: 34 singer lookup checks; empty-song fallback, exact matches, duplicates, duet, errors and portrait priority
+PASS: 68 local/upload checks; multipart, instant upload, AES/RSA, cancellation, hosts and no mutation retries
+APK signature and resource checks passed by build.py.

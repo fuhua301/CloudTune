@@ -1,0 +1,5 @@
+identity and latency rate=44100 taps=1 max_error=2.9802322387695312E-8
+independent stereo rate=48000 taps=3 max_error=1.7666025087237358E-8
+viper_blackdiamond_headset.irs rate=44100 taps=1995 max_error=7.061702511634849E-8
+viper_blackdiamond_headset.irs rate=48000 taps=2172 max_error=6.498301940993656E-8
+PASS: 20664 convolution assertions; includes tail, latency, chunk boundaries, stereo and resampling

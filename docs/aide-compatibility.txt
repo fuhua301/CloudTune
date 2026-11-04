@@ -1,0 +1,2 @@
+1.0.22：LocalMusic.java 不再使用 try-with-resources，Cursor查询列先独立声明，文件复制和元数据读取拆分为方法。
+全项目Java 8构建、LocalMusic单文件Java 6语法检查通过。Android API28/35共4项本地及设置检查通过，包括导入、去重、取消及资源清理。未在实际手机AIDE运行。

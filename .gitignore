@@ -1,0 +1,21 @@
+# Local build and SDK state
+.tools/
+.gradle/
+build/
+app/build/
+dist/
+local.properties
+*.iml
+.idea/
+# Credentials and signing material
+*.jks
+*.keystore
+keystore.properties
+.env
+# Local sessions, diagnostic logs, OS files
+*.log
+.DS_Store
+Thumbs.db
+
+# Native bridge intermediate link stubs
+native/build/

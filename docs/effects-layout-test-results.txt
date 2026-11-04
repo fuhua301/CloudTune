@@ -1,0 +1,14 @@
+JUnit version 4.13.2
+.PASS: 10 cards measured at 320dp, font scale 1.0; first height=169
+.PASS: 10 cards measured at 320dp, font scale 1.0; first height=169
+.PASS: 10 cards measured at 360dp, font scale 1.0; first height=169
+.PASS: 10 cards measured at 360dp, font scale 1.0; first height=169
+.PASS: 10 cards measured at 360dp, font scale 1.6; first height=169
+.PASS: 10 cards measured at 360dp, font scale 1.6; first height=169
+.PASS: 10 cards measured at 480dp, font scale 1.0; first height=169
+.PASS: 10 cards measured at 480dp, font scale 1.0; first height=169
+
+Time: 12.385
+
+OK (8 tests)
+

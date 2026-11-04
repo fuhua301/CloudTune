@@ -1,0 +1,32 @@
+[
+  {
+    "preset": "bass",
+    "effect_difference_vs_bypass": 0.15106642246246338,
+    "peak": 0.05598193407058716
+  },
+  {
+    "preset": "clarity",
+    "effect_difference_vs_bypass": 0.06422674655914307,
+    "peak": 0.21879488229751587
+  },
+  {
+    "preset": "live",
+    "effect_difference_vs_bypass": 0.10996139049530029,
+    "peak": 0.36652928590774536
+  },
+  {
+    "preset": "wide",
+    "effect_difference_vs_bypass": 0.13156554102897644,
+    "peak": 0.139410138130188
+  },
+  {
+    "preset": "tube",
+    "effect_difference_vs_bypass": 0.023716330528259277,
+    "peak": 0.1827290654182434
+  },
+  {
+    "preset": "analog",
+    "effect_difference_vs_bypass": 0.03142082691192627,
+    "peak": 0.16078460216522217
+  }
+]

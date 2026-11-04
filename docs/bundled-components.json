@@ -1,0 +1,48 @@
+{
+  "source_apk": "酷狗音乐_20.6.6.apk",
+  "source_sha256": "1e301d16e3b3f7e6c3cd0a2d99958cfd15f07a9e6d80befc915180fe6aaa67a9",
+  "files": [
+    {
+      "path": "app/src/main/jniLibs/arm64-v8a/libviper4android.so",
+      "bytes": 891136,
+      "sha256": "de5f26c7f257bab6e4c525d1eb669a3cfd69a62ae3a036facd54c8bdc44feafc",
+      "source_entry": "lib/arm64-v8a/libviper4android.so"
+    },
+    {
+      "path": "app/src/main/jniLibs/arm64-v8a/libeffect0.so",
+      "bytes": 2668288,
+      "sha256": "7055c40b589058eb2e48b0ffa9fb7e039cf2b137beb2002660753c2d47fa0ea4",
+      "source_entry": "lib/arm64-v8a/libeffect0.so"
+    },
+    {
+      "path": "app/src/main/jniLibs/arm64-v8a/libcloudtune_fx.so",
+      "bytes": 45616,
+      "sha256": "3baeba1e44a09b53ab8a644914d34899a285662c401b9dcca3725c4847f120f8",
+      "source_entry": "app-owned bridge"
+    },
+    {
+      "path": "app/src/main/jniLibs/arm64-v8a/libc++_shared.so",
+      "bytes": 1058904,
+      "sha256": "7527012f70011313a113a34e95deb1adabcaff1fd81ab37c369af534941eb7ad",
+      "source_entry": "lib/arm64-v8a/libc++_shared.so"
+    },
+    {
+      "path": "app/src/main/assets/soundeffect/viper_blackdiamond_headset.irs",
+      "bytes": 9852,
+      "sha256": "f914c3adc2143b71428d8fbbc0933e6275205f7bd5aef3c5d1a41243a4dfdd28",
+      "source_entry": "assets/soundeffect/viper_blackdiamond_headset.irs"
+    },
+    {
+      "path": "app/src/main/assets/soundeffect/3d_spatial_lower.vpf",
+      "bytes": 814,
+      "sha256": "79e94303a5c77e68df52d200893737268539f0df4c96828dc9c15ea0106bd45e",
+      "source_entry": "assets/soundeffect/3d_spatial_lower.vpf"
+    },
+    {
+      "path": "app/src/main/assets/soundeffect/3d_output2.vpf",
+      "bytes": 814,
+      "sha256": "ef9cdd54bea9bee041c3272cde4c942e7cb502e790b68d7b9a83d0ffee2ae52f",
+      "source_entry": "assets/soundeffect/3d_output2.vpf"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+<LinearLayout 
+    android:id="@+id/widget_root" android:layout_width="match_parent" android:layout_height="72dp" android:layout_gravity="center_vertical"
+    android:orientation="horizontal" android:gravity="center_vertical" android:paddingLeft="10dp" android:paddingRight="8dp"
+    android:paddingTop="5dp" android:paddingBottom="5dp" android:background="@drawable/widget_bg">
+    <ImageView android:id="@+id/widget_record" android:layout_width="56dp" android:layout_height="match_parent"
+        android:src="@drawable/widget_record" android:scaleType="centerInside" android:contentDescription="打开播放器" />
+    <LinearLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:orientation="vertical" android:layout_marginLeft="9dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.45" android:gravity="center_vertical" android:orientation="horizontal">
+            <TextView android:id="@+id/widget_title" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent"
+                android:text="我的酷狗云盘" android:textSize="15sp" android:textColor="#FFFFFF" android:gravity="center_vertical"
+                android:includeFontPadding="false" android:maxLines="1" android:ellipsize="end" />
+            <ImageButton android:id="@+id/widget_skin" android:layout_width="28dp" android:layout_height="match_parent" android:padding="5dp"
+                android:background="@android:color/transparent" android:src="@drawable/ic_skin" android:scaleType="fitCenter" android:contentDescription="切换卡片配色" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.55" android:orientation="horizontal" android:gravity="center_vertical">
+            <ImageButton android:id="@+id/widget_mode" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:padding="5dp" android:background="@android:color/transparent" android:src="@drawable/ic_repeat" android:contentDescription="切换播放模式" android:scaleType="fitCenter" />
+            <ImageButton android:id="@+id/widget_prev" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:padding="5dp" android:background="@android:color/transparent" android:src="@drawable/ic_prev" android:contentDescription="上一首" android:scaleType="fitCenter" />
+            <ImageButton android:id="@+id/widget_play" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:padding="3dp" android:background="@android:color/transparent" android:src="@drawable/ic_play" android:contentDescription="播放或暂停" android:scaleType="fitCenter" />
+            <ImageButton android:id="@+id/widget_next" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:padding="5dp" android:background="@android:color/transparent" android:src="@drawable/ic_next" android:contentDescription="下一首" android:scaleType="fitCenter" />
+            <ImageButton android:id="@+id/widget_queue" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:padding="5dp" android:background="@android:color/transparent" android:src="@drawable/ic_queue" android:contentDescription="打开云盘列表" android:scaleType="fitCenter" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+</FrameLayout>

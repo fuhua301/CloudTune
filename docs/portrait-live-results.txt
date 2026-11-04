@@ -1,0 +1,4 @@
+PASS 程响 author_id=4442 candidates=24 image_bytes=1883738
+PASS 蔡旻佑 author_id=432 candidates=24 image_bytes=725709
+PASS 顾峰 author_id=983 candidates=8 image_bytes=115661
+PASS 斯琴高丽 author_id=5837 candidates=24 image_bytes=279373
