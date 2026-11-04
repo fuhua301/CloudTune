@@ -1,0 +1,22 @@
+name: Publish 1.0.26
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/publish-1.0.26.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Publish APK and source archive
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          if ! gh release view v1.0.26 >/dev/null 2>&1; then
+            gh release create v1.0.26 --target "$GITHUB_SHA" --title "云听HIFI 1.0.26" --notes "云听HIFI 1.0.26：APK 安装包及完整 AIDE 源码压缩包。仅支持 ARM64、Android 6.0 及以上。覆盖安装请保持签名一致。"
+          fi
+          gh release upload v1.0.26 downloads/CloudTune-1.0.26.apk downloads/CloudTune-AIDE-Source-1.0.26-fx.zip --clobber
